@@ -52,8 +52,6 @@
         </div>
       </div>
 
-
-
       <!-- Total -->
       <div class="bg-white shadow-md rounded-xl p-4 flex flex-col justify-betweenfont-bold text-base sm:text-lg">
         <div class=" px-4 py-1 flex justify-between font-roboto items-center text-lg ">
@@ -133,14 +131,22 @@ export default {
   computed: {
     ...mapState(["cart"]),
     totalMrp() {
-      return this.cart.reduce((sum, item) => sum + (Number(item.rate) * item.quantity), 0)
+      return this.cart.reduce((sum, item) => {
+        const rate = Number(item.rate) || Number(item.price)
+        return sum + rate * (item.quantity || 1)
+      }, 0)
     },
     cartTotal() {
-      return this.cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+      return this.cart.reduce((sum, item) => {
+        const price = Number(item.price) || 0
+        return sum + price * (item.quantity || 1)
+      }, 0)
     },
+
     totalDiscount() {
       return this.totalMrp - this.cartTotal
     }
+
   },
   watch: {
     cart(newcart) {

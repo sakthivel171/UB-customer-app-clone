@@ -181,7 +181,7 @@ export const categories = [
       { id:37 , name: "Milkshake-Strawberry", price:40, unit: "220 ML", image:"https://images.weserv.nl/?url=https://uzhavarbumi.s3.ap-south-1.amazonaws.com/uploads/x2Te6EA6D55OivdLB5MirILkNKSzCBB9wJHJgY7u.png&updatedOn=18-09-2024",discount:true },
         { id:11 , name: "ABC Malt", price:262 , unit: "200 Grams", image: "https://images.weserv.nl/?url=https://uzhavarbumi.s3.ap-south-1.amazonaws.com/uploads/qoOJwfWbmp08NLUYRkE7RTiVaSPNTAKblpaMXd2W.png&updatedOn=30-07-2025", discount:true },
       { id:24 , name: "Palm Candy Badam Mix", price:297 , unit: "200 Grams", image: "https://images.weserv.nl/?url=https://uzhavarbumi.s3.ap-south-1.amazonaws.com/uploads/edrcomPZ0gRHjY0OQfRvytPXzOkUvZBjyUbA0Lec.png&updatedOn=29-05-2025" ,discount:true},
-      { id:25 , name: "Health Mix", price:258 , unit: "400Grams", image: "https://images.weserv.nl/?url=https://uzhavarbumi.s3.ap-south-1.amazonaws.com/uploads/127bhmwDoROz0WH8s0cPFHG1AfUCjgShgjXhdVO1.png&updatedOn=10-06-2025",discount:true },
+      { id:25 , name: "Health Mix", price:258 , unit: "400Grams", image: "https://images.weserv.nl/?url=https://uzhavarbumi.s3.ap-south-1.amazonaws.com/uploads/127bhmwDoROz0WH8s0cPFHG1AfUCjgShgjXhdVO1.png&updatedOn=10-06-2025", },
     ]
  },
 ];
