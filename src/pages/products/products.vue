@@ -1,4 +1,5 @@
 <template>
+  <!-- This is the main page that show the categories of product -->
   <section>
     <div class="fixed z-10 flex items-center  h-12 p-4 mx-auto text-white shadow-md bg-[#73983c] w-[500px] ">
       <ion-icon @click="goback" name="arrow-back" class="text-3xl leading-none cursor-pointer"></ion-icon>

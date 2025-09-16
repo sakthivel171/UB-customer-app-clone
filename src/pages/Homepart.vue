@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- nav links for extra milk,recipes etc.. -->
     <p class="py-3 text-[#374151] text-base font-semibold font-montserrat">Quick Actions</p>
     <div
       class=" flex items-center justify-between rounded-md h-16 px-4 bg-white shadow-md shadow-slate-300 text-center font-roboto text-[12.8px] text-[#4b5563]">
@@ -8,6 +9,7 @@
         <p class="py-1 ">{{ item.label }}</p>
       </a>
     </div>
+    <!-- dealer info -->
   </section>
   <p class="py-3 mt-5 text-[#374151] text-base font-semibold font-montserrat ">Dealer Info</p>
   <div class="bg-white mt-2 rounded-md shadow-md mb-5">
@@ -21,7 +23,7 @@
       <a href="" class="px-8">Whatsapp</a>
     </div>
   </div>
-
+  <!-- it conatain nav links about queries  -->
   <section>
     <p class="py-3 text-[#374151] text-base font-semibold font-montserrat">Need Help</p>
     <div
@@ -32,7 +34,7 @@
       </a>
     </div>
   </section>
-
+<!-- It contain social nav -->
   <section>
     <p class="py-3 text-[#374151] text-base font-semibold font-montserrat mt-5">Spread the Word</p>
     <div

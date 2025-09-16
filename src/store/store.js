@@ -4,7 +4,7 @@ export default createStore({
   state: {
     cart: []
   },
-  getters: {
+  getters:{
     getQuantity: (state) => (productId) => {
       const item = state.cart.find(p => p.id === productId);
       return item ? item.quantity : 0;
@@ -30,12 +30,12 @@ export default createStore({
       }
     }
   },
-  actions: {
-    addToCart({ commit }, product) {
-      commit("ADD_TO_CART", product);
-    },
-    removeFromCart({ commit }, product) {
-      commit("REMOVE_FROM_CART", product);
-    }
-  }
+  // actions: {
+  //   addToCart({ commit }, product) {
+  //     commit("ADD_TO_CART", product);
+  //   },
+  //   removeFromCart({ commit }, product) {
+  //     commit("REMOVE_FROM_CART", product);
+  //   }
+  // }
 });
